@@ -1,0 +1,124 @@
+header {
+    background-color: #164a98;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #006AEA;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #164a98;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+td img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.activo {
+    color: green;
+    font-weight: bold;
+}
+
+.inactivo {
+    color: red;
+    font-weight: bold;
+}
+
+.view, .delete {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.view {
+    color: #006AEA;
+}
+
+.delete {
+    color: #d9534f;
+}
+
+.view:hover {
+    color: #004080;
+}
+
+.delete:hover {
+    color: #a94442;
+}
+
+.pagination {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #164a98;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #006AEA;
+}
