@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="titulos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Document</title>
+<body>
+    <header>
+        <section class="logo">
+             <img src="imagenes_egresados/Captura de pantalla 2026-06-27 175611.png" alt="logo">
+        </section>
+        <nav>
+            <a href="">Inicio</a>
+            <a href="">Nosotros</a>
+            <a href="">Egresados</a>
+            <a href="">Noticias</a>
+            <a href="">Eventos</a>
+            <a href="">Contacto</a>
+        </nav>
+    </header>
+   <main>
+  <section class="perfil">
+    <img src="imagenes_egresados/ana.png" alt="Foto de Ana López">
+    <div>
+      <h2>Camila Rojas</h2>
+      <p>Egresada de Ingeniería de software</p>
+    </div>
+  </section>
+
+  <h3>Gestión de Títulos Académicos</h3>
+  <div class="filtros">
+    <select id="tipoPrograma">
+      <option>Todos</option>
+      <option>Técnico</option>
+      <option>Bachillerato</option>
+      <option>Maestría</option>
+    </select>
+    <select id="anioGraduacion">
+      <option>Todos</option>
+      <option>2025</option>
+      <option>2018</option>
+    </select>
+    <select id="estadoTitulo">
+      <option>Todos</option>
+      <option>Activo</option>
+      <option>Inactivo</option>
+    </select>
+    <button class="btn-filtrar">Filtrar</button>
+    <button class="btn-agregar">+ Agregar Título</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tipo de Programa</th>
+        <th>Carrera</th>
+        <th>Año de Graduación</th>
+        <th>Estado</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Maestría</td>
+        <td>Inteligencia artificial</td>
+        <td>2025</td>
+        <td><span class="activo">Activo</span></td>
+        <td>
+          <button class="view"><i class="fa-solid fa-eye"></i></button>
+          <button class="edit"><i class="fa-solid fa-pencil"></i></button>
+          <button class="delete"><i class="fa-solid fa-trash"></i></button>
+        </td>
+      </tr>
+      <tr>
+        <td>Bachillerato</td>
+        <td>Ingeniería de software</td>
+        <td>2018</td>
+        <td><span class="activo">Inactivo</span></td>
+        <td>
+          <button class="view"><i class="fa-solid fa-eye"></i></button>
+          <button class="edit"><i class="fa-solid fa-pencil"></i></button>
+          <button class="delete"><i class="fa-solid fa-trash"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+
+
+</body>
+</html>

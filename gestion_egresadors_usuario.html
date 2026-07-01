@@ -22,22 +22,7 @@
         </nav>
     </header>
     <main>
-        <div class="buscador">
-            <label for="buscar">Buscar:</label>
-            <input type="text" id="buscar" placeholder="Escribe un nombre...">
-            <button id="btnAgregar" class="btn-agregar">Agregar Egresado</button>
-        </div>
-        <form id="formEgresado" class="form-egresado" style="display: none;">
-            <h3>Nuevo Egresado</h3>
-            <input type="text" id="nombre" placeholder="Nombre completo" required>
-            <input type="text" id="carrera" placeholder="Carrera" required>
-            <input type="number" id="anio" placeholder="Año de egreso" required>
-            <select  id="estado">
-                <option value="Activo">Activo</option>
-                <option value="Inactivo">Inactivo</option>
-            </select>
-            <button type="submite">Guardar</button>
-        </form>
+        
 
         <table>
             <thead>
@@ -47,8 +32,6 @@
                 <th>Carrera</th>
                 <th>Año de egreso</th>
                 <th>Estado</th>
-                <th>Acciones</th>
-                </tr>
             </thead>
             <tbody>
                 <tr>
@@ -57,10 +40,7 @@
                     <td>Ingenieria de software</td>
                     <td>2002</td>
                     <td><span class="activo">Activo</span></td>
-                    <td>
-                         <button class="view"><i class="fa-solid fa-eye"></i></button>
-                        <button class="delete"><i class="fa-solid fa-trash"></i></button>
-                    </td>
+                    
                 </tr>
                 <tr>
                     <td><img src="" alt=""></td>
@@ -68,10 +48,8 @@
                     <td>Tecnico en ciberseguridad</td>
                     <td>2025</td>
                     <td><span class="inactivo">Inactivo</span></td>
-                    <td>
-                         <button class="view"><i class="fa-solid fa-eye"></i></button>
-                        <button class="delete"><i class="fa-solid fa-trash"></i></button>
-                    </td>
+                   
+                   
                 </tr>
                 <tr>
                     <td><img src="" alt=""></td>
@@ -79,10 +57,8 @@
                     <td>Maestria en IA</td>
                     <td>2000</td>
                     <td><span class="activo">Activo</span></td>
-                    <td>
-                         <button class="view"><i class="fa-solid fa-eye"></i></button>
-                        <button class="delete"><i class="fa-solid fa-trash"></i></button>
-                    </td>
+                   
+                        
                 </tr>
                 <tr>
                     <td><img src="" alt=""></td>
@@ -90,10 +66,7 @@
                     <td>Bachillerato en ciberseguridad</td>
                     <td>2015</td>
                     <td><span class="inactivo">Inactivo</span></td>
-                    <td>
-                         <button class="view"><i class="fa-solid fa-eye"></i></button>
-                        <button class="delete"><i class="fa-solid fa-trash"></i></button>
-                    </td>
+                    
                 </tr>
                 <tr>
                     <td><img src="" alt=""></td>
@@ -101,10 +74,7 @@
                     <td>Tecnico en bases de datos</td>
                     <td>2025</td>
                     <td><span class="inactivo">Inactivo</span></td>
-                    <td>
-                         <button class="view"><i class="fa-solid fa-eye"></i></button>
-                        <button class="delete"><i class="fa-solid fa-trash"></i></button>
-                    </td>
+                   
                 </tr>
             </tbody>
         </table>

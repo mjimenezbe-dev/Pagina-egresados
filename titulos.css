@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #164a98;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #006AEA;
+  color: #fff;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px auto;
+  width: 80%;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.perfil img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.perfil h2 {
+  margin: 0;
+  color: #164a98;
+}
+
+.perfil p {
+  margin: 4px 0 0;
+  color: #555;
+}
+
+main h3 {
+  text-align: center;
+  color: #164a98;
+  margin-top: 10px;
+}
+
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+thead {
+  background-color: #164a98;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #eef3ff;
+}
+
+.activo {
+  color: green;
+  font-weight: bold;
+}
+
+.inactivo {
+  color: red;
+  font-weight: bold;
+}
+
+.view, .edit, .delete {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.view {
+  color: #006AEA;
+}
+
+.edit {
+  color: #f0ad4e;
+}
+
+.delete {
+  color: #d9534f;
+}
+
+.view:hover {
+  color: #004080;
+}
+
+.edit:hover {
+  color: #ec971f;
+}
+
+.delete:hover {
+  color: #a94442;
+}
+
+.filtros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.filtros select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.filtros select:focus {
+  border-color: #164a98;
+  outline: none;
+}
+
+.btn-filtrar, .btn-agregar {
+  background-color: #164a98;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-filtrar:hover, .btn-agregar:hover {
+  background-color: #006AEA;
+}
+
+.pagination {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #164a98;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #006AEA;
+}

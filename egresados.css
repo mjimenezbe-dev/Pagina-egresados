@@ -122,3 +122,61 @@ td img {
 .pagination button:hover {
     background-color: #006AEA;
 }
+
+.buscador {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.buscador input{
+    padding: 6px 10px;
+    border: 1 px solid #ccc;
+    border-radius:4px;
+    width: 250px;
+    transition: border-color 0.3s ease;
+}
+.buscador input:focus{
+    border-color: #164a98;
+    outline: none;
+}
+.btn-agregar{
+    background-color: #164a98;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: backgroud-color 0.3s ease;
+}
+.btn-agregar:hover{
+    background-color: #006AEA;
+}
+.form-egresado{
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-egresado input, .form-egresado select{
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1 1 200px;
+}
+
+.form-egresado button{
+    background-color: #164a98;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
