@@ -1,0 +1,160 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#f0f4f9;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    min-height:100vh;
+}
+
+header{
+    width:100%;
+    height:80px;
+    background:#164a98;
+    display:flex;
+    align-items:center;
+    padding:0 35px;
+}
+
+.logo{
+    width:180px;
+}
+
+.logo img{
+    height:60px;
+    width:auto;
+}
+
+nav{
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+    gap:45px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    font-size:16px;
+    padding:8px 10px;
+    border-radius:6px;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#006AEA;
+}
+
+.login-container{
+    
+    margin-top:35px;
+    width:900px;
+    max-width:95%;
+    height:500px;
+    background:white;
+    display:flex;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.login-content{
+    
+    flex:1.1;
+    padding:45px 55px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.encabezado h1{
+
+    color:#072b66;
+    font-size:2.1rem;
+    margin-bottom:10px;
+}
+
+.encabezado p{
+
+    color:#666;
+    margin-bottom:30px;
+}
+
+.formulario{
+
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+
+    color:#001f54;
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+input{
+
+    width:100%;
+    padding:14px 16px;
+    border:1px solid #d9d9d9;
+    border-radius:8px;
+    font-size:15px;
+    margin-bottom:18px;
+    outline:none;
+    transition:.2s;
+}
+
+input::placeholder{
+
+    color:#b8b8b8;
+}
+
+input:focus{
+
+    border-color:#0168ee;
+}
+
+button{
+
+    margin-top:8px;
+    padding:14px;
+    background:#0168ee;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+
+    background:#0057c7;
+}
+
+.imagen-panel{
+
+    flex:.9;
+    background:#0168ee;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.imagen-panel img{
+
+    width:70%;
+    height:auto;
+    object-fit:contain;
+}

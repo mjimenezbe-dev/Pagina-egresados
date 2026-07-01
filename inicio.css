@@ -1,0 +1,175 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#f0f4f9;
+}
+
+header{
+    width:100%;
+    height:80px;
+    background:#164a98;
+    display:flex;
+    align-items:center;
+    padding:0 35px;
+}
+
+.logo{
+    width:180px;
+}
+
+.logo img{
+    height:60px;
+    width:auto;
+}
+
+nav{
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+    gap:45px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    font-size:16px;
+    padding:8px 10px;
+    border-radius:6px;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#006AEA;
+}
+
+.login-container{
+
+    width:1200px;
+    max-width:95%;
+    margin:35px auto;
+    background:white;
+    border-radius:25px;
+    padding:60px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    position:relative;
+    overflow:hidden;
+}
+
+.login-container::after {
+    content: ""; 
+    position: absolute;
+    right: 60px;
+    top: 40px;
+    width: 430px;
+    height: 430px; 
+    background-color: #007bff; 
+    border-radius: 50%; 
+    z-index: 1; 
+}
+
+.login-container img {
+    position: relative;
+    z-index: 2; /* Mayor que el z-index del círculo */
+}
+
+.login-container h1{
+
+    font-size:60px;
+    color:#072b66;
+    margin-bottom:20px;
+    width:45%;
+}
+
+.login-container>p{
+
+    width:42%;
+    color:#555;
+    font-size:22px;
+    line-height:1.6;
+}
+
+button{
+
+    margin-top:40px;
+    background:#0069ee;
+    color:white;
+    border:none;
+    padding:18px 40px;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+
+    background:#0056c8;
+}
+
+.login-container img{
+
+    position:absolute;
+    right:100px;
+    top:20px;
+    width:400px;
+}
+
+.beneficios{
+
+    margin-top:70px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    background:white;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    overflow:hidden;
+}
+
+.beneficios div{
+
+    padding:35px 25px;
+    text-align:center;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.beneficios div:hover{
+
+    background:#f7faff;
+}
+
+.beneficios div:not(:last-child){
+
+    border-right:1px solid #ececec;
+}
+
+.beneficios i{
+
+    font-size:45px;
+    color:#0069ee;
+    margin-bottom:20px;
+}
+
+.beneficios h2{
+
+    color:#0a2b67;
+    font-size:22px;
+    margin-bottom:12px;
+}
+
+.beneficios p{
+
+    color:#666;
+    line-height:1.5;
+    font-size:16px;
+}
