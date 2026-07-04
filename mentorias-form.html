@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Mentoría - CENFOTEC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <section class="logo">
+        <img src="../Pagina-egresados/imagenes/Captura de pantalla 2026-06-27 175611.png" alt="logo">
+    </section>
+    <nav>
+        <a href="">Inicio</a>
+        <a href="">Nosotros</a>
+        <a href="">Egresados</a>
+        <a href="">Noticias</a>
+        <a href="">Eventos</a>
+        <a href="">Contacto</a>
+    </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Nueva Mentoría</h1>
+            <p>Registre los datos del proceso de mentoría.</p>
+        </section>
+
+        <section class="tarjeta">
+            <form>
+
+                <div class="campo">
+                    <label for="mentor">Nombre del mentor</label>
+                    <input type="text" id="mentor" name="mentor"
+                           placeholder="Ej: Ana Jiménez" required>
+                </div>
+
+                <div class="campo">
+                    <label for="area">Área de experiencia</label>
+                    <input type="text" id="area" name="area"
+                           placeholder="Ej: Desarrollo Web" required>
+                </div>
+
+                <div class="campo">
+                    <label for="especialidades">Especialidades</label>
+                    <textarea id="especialidades" name="especialidades" rows="3"
+                              placeholder="Ej: JavaScript, React, Node.js"></textarea>
+                </div>
+
+                <div class="campo">
+                    <label for="experiencia">Años de experiencia</label>
+                    <input type="number" id="experiencia" name="experiencia"
+                           placeholder="Ej: 5" min="0">
+                </div>
+
+                <div class="campo">
+                    <label for="inicio">Fecha de inicio</label>
+                    <input type="date" id="inicio" name="inicio" required>
+                </div>
+
+                <div class="campo">
+                    <label for="fin">Fecha de finalización</label>
+                    <input type="date" id="fin" name="fin">
+                </div>
+
+                <div class="campo">
+                    <label for="estado">Estado</label>
+                    <select id="estado" name="estado" required>
+                        <option value="">-- Seleccione --</option>
+                        <option value="pendiente">Pendiente</option>
+                        <option value="activa">Activa</option>
+                        <option value="finalizada">Finalizada</option>
+                        <option value="cancelada">Cancelada</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="observaciones">Observaciones</label>
+                    <textarea id="observaciones" name="observaciones" rows="4"
+                              placeholder="Comentarios adicionales sobre la mentoría..."></textarea>
+                </div>
+
+                <button type="submit" class="boton">Guardar mentoría</button>
+                <a href="mentorias-lista.html" class="boton boton-secundario">Cancelar</a>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Universidad CENFOTEC · Programa de Egresados</p>
+        <p>Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

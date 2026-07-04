@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Comunicado - CENFOTEC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <header>
+         <section class="logo">
+        <img src="../Pagina-egresados/imagenes/Captura de pantalla 2026-06-27 175611.png" alt="logo">
+    </section>
+    <nav>
+        <a href="">Inicio</a>
+        <a href="">Nosotros</a>
+        <a href="">Egresados</a>
+        <a href="">Noticias</a>
+        <a href="">Eventos</a>
+        <a href="">Contacto</a>
+    </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Nuevo Comunicado</h1>
+            <p>Complete la información del comunicado institucional.</p>
+        </section>
+
+
+        <section class="tarjeta">
+            <form>
+
+
+                <div class="campo">
+                    <label for="titulo">Título del comunicado</label>
+                    <input type="text" id="titulo" name="titulo"
+                           placeholder="Ej: Charla de Inteligencia Artificial" required>
+                </div>
+
+
+                <div class="campo">
+                    <label for="contenido">Contenido</label>
+                    <textarea id="contenido" name="contenido" rows="5"
+                              placeholder="Escriba el mensaje del comunicado..." required></textarea>
+                </div>
+
+ 
+                <div class="campo">
+                    <label for="fecha">Fecha de publicación</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+
+                <div class="campo">
+                    <label for="dirigido">Dirigido a</label>
+                    <select id="dirigido" name="dirigido" required>
+                        <option value="">-- Seleccione --</option>
+                        <option value="todos">Todos los egresados</option>
+                        <option value="tecnico">Egresados de Técnico</option>
+                        <option value="bachillerato">Egresados de Bachillerato</option>
+                        <option value="maestria">Egresados de Maestría</option>
+                    </select>
+                </div>
+
+
+                <div class="campo">
+                    <label for="estado">Estado</label>
+                    <select id="estado" name="estado" required>
+                        <option value="">-- Seleccione --</option>
+                        <option value="borrador">Borrador</option>
+                        <option value="publicado">Publicado</option>
+                    </select>
+                </div>
+
+
+                <button type="submit" class="boton">Guardar comunicado</button>
+                <a href="comunicados-lista.html" class="boton boton-secundario">Cancelar</a>
+
+            </form>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Universidad CENFOTEC · Programa de Egresados</p>
+        <p>Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

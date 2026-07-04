@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Oportunidad Laboral - CENFOTEC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <section class="logo">
+        <img src="../Pagina-egresados/imagenes/Captura de pantalla 2026-06-27 175611.png" alt="logo">
+    </section>
+    <nav>
+        <a href="">Inicio</a>
+        <a href="">Nosotros</a>
+        <a href="">Egresados</a>
+        <a href="">Noticias</a>
+        <a href="">Eventos</a>
+        <a href="">Contacto</a>
+    </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Nueva Oportunidad Laboral</h1>
+            <p>Complete la información de la oferta de empleo.</p>
+        </section>
+
+        <section class="tarjeta">
+            <form>
+
+                <div class="campo">
+                    <label for="empresa">Empresa</label>
+                    <input type="text" id="empresa" name="empresa"
+                           placeholder="Ej: TechSolutions CR" required>
+                </div>
+
+                <div class="campo">
+                    <label for="puesto">Puesto</label>
+                    <input type="text" id="puesto" name="puesto"
+                           placeholder="Ej: Desarrollador Full Stack" required>
+                </div>
+
+                <div class="campo">
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" name="descripcion" rows="4"
+                              placeholder="Describa las responsabilidades y requisitos..." required></textarea>
+                </div>
+
+                <div class="campo">
+                    <label for="area">Área profesional</label>
+                    <input type="text" id="area" name="area"
+                           placeholder="Ej: Desarrollo de Software" required>
+                </div>
+
+                <div class="campo">
+                    <label for="modalidad">Modalidad</label>
+                    <select id="modalidad" name="modalidad" required>
+                        <option value="">-- Seleccione --</option>
+                        <option value="presencial">Presencial</option>
+                        <option value="remoto">Remoto</option>
+                        <option value="hibrido">Híbrido</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="ubicacion">Ubicación</label>
+                    <input type="text" id="ubicacion" name="ubicacion"
+                           placeholder="Ej: San José" required>
+                </div>
+
+                <div class="campo">
+                    <label for="publicacion">Fecha de publicación</label>
+                    <input type="date" id="publicacion" name="publicacion" required>
+                </div>
+
+                <div class="campo">
+                    <label for="vencimiento">Fecha de vencimiento</label>
+                    <input type="date" id="vencimiento" name="vencimiento" required>
+                </div>
+
+                <div class="campo">
+                    <label for="contacto">Correo o enlace de contacto</label>
+                    <input type="text" id="contacto" name="contacto"
+                           placeholder="Ej: rrhh@empresa.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="estado">Estado</label>
+                    <select id="estado" name="estado" required>
+                        <option value="">-- Seleccione --</option>
+                        <option value="activa">Activa</option>
+                        <option value="cerrada">Cerrada</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="boton">Guardar oportunidad</button>
+                <a href="oportunidades-lista.html" class="boton boton-secundario">Cancelar</a>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Universidad CENFOTEC · Programa de Egresados</p>
+        <p>Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
