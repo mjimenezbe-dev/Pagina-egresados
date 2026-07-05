@@ -10,13 +10,12 @@ body{
     background:#f0f4f9;
 }
 
-header{
-    width:100%;
-    height:80px;
-    background:#164a98;
-    display:flex;
-    align-items:center;
-    padding:0 35px;
+header {
+    background-color: #164a98;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .logo{
@@ -27,27 +26,25 @@ header{
     height:60px;
     width:auto;
 }
-
-nav{
-    flex:1;
-
-    display:flex;
-    justify-content:center;
-    gap:45px;
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-nav a{
-    text-decoration:none;
-    color:white;
-    font-weight:600;
-    font-size:16px;
-    padding:8px 10px;
-    border-radius:6px;
-    transition:.3s;
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav a:hover{
-    background:#006AEA;
+nav a:hover {
+  background-color: #006AEA;
+  color: #fff;
 }
 
 .contenedor{
@@ -97,8 +94,6 @@ nav a:hover{
 }
 
 button{
-
-    margin-top:40px;
     background:#0069ee;
     color:white;
     border:none;
@@ -171,4 +166,74 @@ button:hover{
     color:#666;
     line-height:1.5;
     font-size:16px;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul  {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center; 
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+nav a,
+.mnu-btn {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background: none;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover,
+.mnu-btn:hover {
+  background-color: #006AEA;
+  color: #fff;
+}
+
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #164a98;
+  min-width: 220px;
+  padding: 10px 0;
+  border-radius: 6px;
+  z-index: 1000;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul li ul li {
+  display: block;
+  width: 100%;
+}
+
+nav ul li ul li a {
+  display: block;
+  padding: 10px 15px;
 }
