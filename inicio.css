@@ -1,5 +1,4 @@
 
-
 *{
     margin:0;
     padding:0;
@@ -51,7 +50,7 @@ nav a:hover{
     background:#006AEA;
 }
 
-.login-container{
+.contenedor{
 
     width:1200px;
     max-width:95%;
@@ -64,7 +63,7 @@ nav a:hover{
     overflow:hidden;
 }
 
-.login-container::after {
+.contenedor::after {
     content: ""; 
     position: absolute;
     right: 60px;
@@ -76,12 +75,12 @@ nav a:hover{
     z-index: 1; 
 }
 
-.login-container img {
+.contenedor img {
     position: relative;
     z-index: 2; /* Mayor que el z-index del círculo */
 }
 
-.login-container h1{
+.contenedor h1{
 
     font-size:60px;
     color:#072b66;
@@ -89,7 +88,7 @@ nav a:hover{
     width:45%;
 }
 
-.login-container>p{
+.contenedor>p{
 
     width:42%;
     color:#555;
@@ -116,7 +115,7 @@ button:hover{
     background:#0056c8;
 }
 
-.login-container img{
+.contenedor img{
 
     position:absolute;
     right:100px;
